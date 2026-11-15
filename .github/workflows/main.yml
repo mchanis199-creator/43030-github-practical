@@ -1,0 +1,17 @@
+name: 43030 Practical Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display message
+        run: echo "43030 GitHub Actions practical completed successfully"
